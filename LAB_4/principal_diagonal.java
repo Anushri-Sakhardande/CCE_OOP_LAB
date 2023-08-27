@@ -1,5 +1,6 @@
 import java.util.Scanner;
-public class non_diagonal {
+public class principal_diagonal
+{
     public static void main(String[] args) {
         int sum =0;
         Scanner sc = new Scanner(System.in);
@@ -12,14 +13,10 @@ public class non_diagonal {
                     a[i][j]=sc.nextInt();
             }
         }
-        System.out.println("The non diagonal elements are:");
+        System.out.println("The diagonal elements are:");
         for(int i=0;i<n;i++){
-            for(int j=0; j<n; j++){
-                if(i!=j){
-                    System.out.println(a[i][j]);
-                    sum+=a[i][j];
-                }
-            }
+                    System.out.println(a[i][i]);
+                    sum+=a[i][i];
         }
         System.out.println("sum:"+sum);
     }
