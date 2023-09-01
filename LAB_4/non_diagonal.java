@@ -23,4 +23,4 @@ public class non_diagonal {
         }
         System.out.println("sum:"+sum);
     }
-}
+}    

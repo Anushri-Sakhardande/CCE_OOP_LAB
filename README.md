@@ -9,3 +9,9 @@ Data Types, Type Conversion, Operators
 
 ## LAB 3
 Control Statements
+
+## LAB 4
+Arrays
+
+## LAB 5
+Classes and Methods
