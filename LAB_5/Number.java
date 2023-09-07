@@ -1,7 +1,9 @@
 package LAB_5;
 
+import java.util.Scanner;
+
 public class Number {
-    double number;
+    private double number;
 
     Number(int n)
     {
@@ -61,22 +63,16 @@ public class Number {
 class main_class
 {
     public static void main(String[] args) {
-        Number obj = new Number(157);
-        boolean b;
-        b=obj.isZero();
-        System.out.println(b);
-        b=obj.isPositive();
-        System.out.println(b);
-        b=obj.isNegative();
-        System.out.println(b);
-        b=obj.isEven();
-        System.out.println(b);
-        b=obj.isOdd();
-        System.out.println(b);
-        b=obj.isPrime();
-        System.out.println(b);
-        b=obj.isArmstrong();
-        System.out.println(b);
-
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number");
+        int n = sc.nextInt();
+        Number obj = new Number(n);
+        System.out.println(obj.isZero());
+        System.out.println(obj.isPositive());
+        System.out.println(obj.isNegative());
+        System.out.println(obj.isOdd());
+        System.out.println(obj.isEven());
+        System.out.println(obj.isPrime());
+        System.out.println(obj.isArmstrong());
     }
 }
