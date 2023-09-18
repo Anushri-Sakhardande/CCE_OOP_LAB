@@ -2,7 +2,7 @@
 
 
 - [x] **Lab 1** :
-Simple programs with control structures
+Simple Programs With Control Structures
 
 - [x] **Lab 2** :
 Data Types, Type Conversion, Operators
@@ -17,21 +17,25 @@ Arrays
 Classes and Methods
 
 - [x] **Lab 6** :
-Class inheritance 
+Class Inheritance 
 
 - [ ] **Lab 7** :
-  
+Classes-Access Control,Static Keywords, Nested & Inner Clss
 
 - [ ] **Lab 8** :
-      
+Interface & Abstract Class
 
 - [ ] **Lab 9** :
-    
+String Handling
 
 - [ ] **Lab 10** :
-
+Exception Handling
 
 - [ ] **Lab 11** :
-    
+Multithreaded Programming
 
 - [ ] **Lab 12** :
+Generics Basics
+
+- [ ] **Lab 13**:
+Java FX and GUI Programming
