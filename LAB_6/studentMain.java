@@ -75,7 +75,25 @@ public class studentMain{
             sc.nextLine();
         }while(choice=='y');
         System.out.println("Number of students taking UG course: "+UG_total);
+        for(int i =0; i<UG_total;i++)
+        {
+            System.out.println("Registration number:"+under[i].registration);
+            System.out.println("Name:"+under[i].name);
+            System.out.println("Age:"+under[i].age);
+            System.out.println("Semester:"+under[i].semester);
+            System.out.println("Fees:"+under[i].fees);
+            System.out.println();
+        }
         System.out.println("Number of students taking PG course: "+PG_total);
+        for(int i =0; i<PG_total;i++)
+        {
+            System.out.println("Registration number:"+post[i].registration);
+            System.out.println("Name:"+post[i].name);
+            System.out.println("Age:"+post[i].age);
+            System.out.println("Semester:"+post[i].semester);
+            System.out.println("Fees:"+post[i].fees);
+            System.out.println();
+        }
         System.out.println("Total admissions: "+(UG_total+PG_total));
     }
 }
