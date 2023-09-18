@@ -1,17 +1,37 @@
-# CCE_OOP_LAB 
+# CCE_OOP_LAB
 
 
-## LAB 1
+- [x] **Lab 1** :
 Simple programs with control structures
 
-## LAB 2
+- [x] **Lab 2** :
 Data Types, Type Conversion, Operators
 
-## LAB 3
+- [x] **Lab 3** :
 Control Statements
 
-## LAB 4
+- [x] **Lab 4** :
 Arrays
 
-## LAB 5
+- [x] **Lab 5** :
 Classes and Methods
+
+- [x] **Lab 6** :
+Class inheritance 
+
+- [ ] **Lab 7** :
+  
+
+- [ ] **Lab 8** :
+      
+
+- [ ] **Lab 9** :
+    
+
+- [ ] **Lab 10** :
+
+
+- [ ] **Lab 11** :
+    
+
+- [ ] **Lab 12** :
