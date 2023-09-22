@@ -19,10 +19,10 @@ Classes and Methods
 - [x] **Lab 6** :
 Class Inheritance 
 
-- [ ] **Lab 7** :
+- [x] **Lab 7** :
 Classes-Access Control,Static Keywords, Nested & Inner Clss
 
-- [ ] **Lab 8** :
+- [x] **Lab 8** :
 Interface & Abstract Class
 
 - [ ] **Lab 9** :

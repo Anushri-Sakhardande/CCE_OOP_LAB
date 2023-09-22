@@ -1,10 +1,10 @@
 package LAB_8;
 import java.util.Scanner;
-public interface area_interface2 {
+interface area_i2 {
     float area();
 }
 
-class rectangle implements area_interface2{
+class square implements area_i2{
     public float area()
     {
         Scanner sc = new Scanner(System.in);
@@ -15,7 +15,7 @@ class rectangle implements area_interface2{
     }
 }
 
-class cicrcle implements area_interface2{
+class triangle implements area_i2{
     public float area()
     {
         Scanner sc = new Scanner(System.in);
@@ -25,5 +25,15 @@ class cicrcle implements area_interface2{
         int height = sc.nextInt();
         return (float) (0.5*base*height);
 
+    }
+}
+
+public class area_interface2{
+    public static void main(String[] args) {
+        square obj1 = new square();
+        System.out.println("The area of the square:"+obj1.area());
+        
+        triangle obj2 = new triangle();
+        System.out.println("The area of the triangle:"+obj2.area());
     }
 }

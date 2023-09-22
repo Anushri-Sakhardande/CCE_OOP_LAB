@@ -1,11 +1,11 @@
 package LAB_8;
 import java.util.Scanner;
 
-public interface area_interface {
+interface area_i {
     float area();
 }
 
-class rectangle implements area_interface{
+class rectangle implements area_i{
     public float area()
     {
         Scanner sc = new Scanner(System.in);
@@ -17,7 +17,7 @@ class rectangle implements area_interface{
     }
 }
 
-class cicrcle implements area_interface{
+class circle implements area_i{
     public float area()
     {
         Scanner sc = new Scanner(System.in);
@@ -25,5 +25,15 @@ class cicrcle implements area_interface{
         int radius = sc.nextInt();
         return (float) (3.14*radius*radius);
 
+    }
+}
+
+public class area_interface{
+    public static void main(String[] args) {
+        circle obj1 = new circle();
+        System.out.println("The area of the circle:"+obj1.area());
+        
+        rectangle obj2 = new rectangle();
+        System.out.println("The area of the rectangle:"+obj2.area());
     }
 }
