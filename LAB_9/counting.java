@@ -25,36 +25,26 @@ public class counting {
     }
 
     int words(String sent) {
-        int ret=0;
-        sent.trim();
-        for(int i =0;i<sent.length();i++){
-            if(!Character.isLetter(sent.charAt(i))){
-                ret++;
-            }
-        }
-        return ret;
+        String arr[]=sent.split(" ");
+        return arr.length;
     }
 
     int lines(String sent) {
-        int ret=0;
-        sent.trim();
-        for(int i =0;i<sent.length();i++){
-            if(sent.charAt(i) == '.'){
-                ret++;
-            }
-        }
-        return ret;
+        String arr[]=sent.split("\\.",0);
+        return arr.length;
     }
 
     int vowels(String sent){
         int ret=0;
-        sent.toLowerCase();
-        for(int i =0;i<sent.length();i++){
-            if(sent.charAt(i) == 'a' || sent.charAt(i) == 'e' || sent.charAt(i) == 'i'|| sent.charAt(i) == 'o'|| sent.charAt(i) == 'u'){
+        sent = sent.toLowerCase();
+        char arr[]= new char[sent.length()];
+        sent.getChars(0,sent.length(),arr,0);
+        for(int x:arr)
+        {
+            if(x == 'a' || x == 'e' || x == 'i'|| x == 'o'|| x == 'u'){
                 ret++;
             }
         }
-        ret++;
         return ret;
     }
 }
