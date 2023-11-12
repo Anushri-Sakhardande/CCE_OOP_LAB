@@ -11,14 +11,15 @@ public class menu_main2 {
 
     public String caseConvert(String st)
     {
-        String converted;
-        if(st.toUpperCase().equals(st))
-        {
-            converted = st.toLowerCase();
-        }
-        else 
-        {
-            converted = st.toUpperCase();
+        String converted="";
+        for(int i=0;i<st.length();i++){
+            char ch = st.charAt(i);
+            if(Character.isUpperCase(ch)){
+                converted+=Character.toLowerCase(ch);
+            }
+            else{
+                converted+=Character.toUpperCase(ch);
+            }
         }
         return converted;
     }

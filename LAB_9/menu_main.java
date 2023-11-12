@@ -53,7 +53,7 @@ public class menu_main {
                 System.out.println("Reversed string:"+obj.reverse(str1));
                 break;
             case 'd':
-                System.out.println("Concatenated sttring is:"+obj.concatenate(str1));
+                System.out.println("Concatenated string is:"+obj.concatenate(str1));
                 break;
         }
     }

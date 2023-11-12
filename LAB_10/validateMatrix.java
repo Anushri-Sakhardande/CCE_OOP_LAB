@@ -23,7 +23,13 @@ public class validateMatrix {
         }
         try {
             if(rows!=cols){
-                throw new MatrixNotValidException("NOt a square matrix");
+                throw new MatrixNotValidException("Not a square matrix");
+            }
+            for(int x[]:matrix){
+                for(int y:x){
+                    System.out.print(y+" ");
+                }
+                System.out.println();
             }
         } catch (Exception e) {
             System.out.println("Error:"+e.getMessage());

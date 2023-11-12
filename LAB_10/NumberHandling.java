@@ -12,8 +12,7 @@ public class NumberHandling {
             System.out.println("The number is"+Number);
         }
         catch(NumberFormatException e){
-            System.out.println("Error:"+e);
+            System.out.println("Error:"+e.getMessage());
         }
-        
     }
 }

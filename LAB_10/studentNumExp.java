@@ -42,14 +42,10 @@ public class studentNumExp {
             System.out.print("Enter roll number: ");
             student.rollNumber = Integer.parseInt(sc.nextLine());
 
-            System.out.print("Enter marks in subject 1: ");
-            student.marks[0] = Integer.parseInt(sc.nextLine());
-
-            System.out.print("Enter marks in subject 2: ");
-            student.marks[1] = Integer.parseInt(sc.nextLine());
-
-            System.out.print("Enter marks in subject 3: ");
-            student.marks[2] = Integer.parseInt(sc.nextLine());
+            System.out.print("Enter marks in 3 subjects: ");
+            for(int i=0;i<3;i++){
+                student.marks[i] = Integer.parseInt(sc.nextLine());
+            }
             System.out.println("Name: " + student.name);
             System.out.println("Roll Number: " + student.rollNumber);
             System.out.println("Marks: " + student.marks[0] + ", " + student.marks[1] + ", " + student.marks[2]);

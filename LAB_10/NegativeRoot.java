@@ -10,9 +10,9 @@ public class NegativeRoot {
         System.out.print("Square root is:");
         try {
             if (number < 0) {
-                throw new IllegalArgumentException("");
+                throw new Exception("");
             }
-        } catch (IllegalArgumentException e) {
+        } catch (Exception e) {
             number = -number;
             System.out.print("i");
         }
