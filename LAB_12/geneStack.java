@@ -77,6 +77,7 @@ public class geneStack {
         employeeStack.Push(new Employee("Alex", 3));
         employeeStack.Push(new Employee("Eva", 5));
         employeeStack.Push(new Employee("Chris", 2));
+         employeeStack.Push(new Employee("Jane", 3));
 
         // Pop and display employees from the stack
         System.out.println("\nEmployees from the stack:");

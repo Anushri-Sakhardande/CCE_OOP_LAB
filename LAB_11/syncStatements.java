@@ -1,27 +1,31 @@
 package LAB_11;
 
+class Incrementersync extends Thread{
+    private final syncStatements syncStatements;
+
+    public Incrementersync(syncStatements syncStatements) {
+        this.syncStatements = syncStatements;
+    }
+
+    public void run() {
+        for (int i = 0; i < 10000; i++) {
+            syncStatements.increment();
+        }
+    }
+}
+
 public class syncStatements {
     private int count = 0;
-    private final Object lock = new Object();
 
     public void increment() {
-        synchronized (lock) {
+        synchronized (this) {
             count++;
         }
     }
 
     public void runExample() {
-        Thread thread1 = new Thread(() -> {
-            for (int i = 0; i < 10000; i++) {
-                increment();
-            }
-        });
-
-        Thread thread2 = new Thread(() -> {
-            for (int i = 0; i < 10000; i++) {
-                increment();
-            }
-        });
+        Incrementersync thread1 = new Incrementersync(this);
+        Incrementersync thread2 = new Incrementersync(this);
 
         thread1.start();
         thread2.start();

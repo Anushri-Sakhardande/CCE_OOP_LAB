@@ -1,5 +1,18 @@
 package LAB_11;
 
+class Incrementer extends Thread{
+    private final syncMethod syncMethod;
+
+    public Incrementer(syncMethod syncMethod) {
+        this.syncMethod = syncMethod;
+    }
+    public void run() {
+        for (int i = 0; i < 10000; i++) {
+            syncMethod.increment();
+        }
+    }
+}
+
 public class syncMethod {
     private int count = 0;
 
@@ -9,17 +22,8 @@ public class syncMethod {
     }
 
     public void runExample() {
-        Thread thread1 = new Thread(() -> {
-            for (int i = 0; i < 10000; i++) {
-                increment();
-            }
-        });
-
-        Thread thread2 = new Thread(() -> {
-            for (int i = 0; i < 10000; i++) {
-                increment();
-            }
-        });
+        Incrementer thread1 = new Incrementer(this);
+        Incrementer thread2 = new Incrementer(this);
 
         thread1.start();
         thread2.start();

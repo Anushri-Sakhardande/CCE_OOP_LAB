@@ -50,12 +50,12 @@ public class linkedListMain {
         System.out.println("Integer Linked List:");
         intList.display();
 
-        linkedList<Double> stringList = new linkedList<>();
-        stringList.add(1.8);
-        stringList.add(15.9);
-        stringList.add(14.2);
+        linkedList<Double> doubleList = new linkedList<>();
+        doubleList.add(1.8);
+        doubleList.add(15.9);
+        doubleList.add(14.2);
 
         System.out.println("\nDouble Linked List:");
-        stringList.display();
+        doubleList.display();
     }
 }
