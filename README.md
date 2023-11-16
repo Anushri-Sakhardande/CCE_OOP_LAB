@@ -28,14 +28,14 @@ Interface & Abstract Class
 - [x] **Lab 9** :
 String Handling
 
-- [ ] **Lab 10** :
+- [x] **Lab 10** :
 Exception Handling
 
-- [ ] **Lab 11** :
+- [x] **Lab 11** :
 Multithreaded Programming
 
-- [ ] **Lab 12** :
+- [x] **Lab 12** :
 Generics Basics
 
-- [ ] **Lab 13**:
+- [x] **Lab 13**:
 Java FX and GUI Programming
