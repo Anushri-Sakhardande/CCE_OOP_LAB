@@ -20,7 +20,7 @@ class Matrix {
 class DisplayMatrixThread extends Thread {
     static int[][] matrix;
 
-    DisplayMatrixThread() {
+    DisplayMatrixThread(Matrix matrixObj) {
         matrix = Matrix.matrix;
     }
 
@@ -37,7 +37,7 @@ class DisplayMatrixThread extends Thread {
 class TransposeMatrixThread extends Thread {
     static int[][] matrix;
 
-    TransposeMatrixThread() {
+    TransposeMatrixThread(Matrix matrixObj) {
         matrix = Matrix.matrix;
     }
 
@@ -57,7 +57,7 @@ class TransposeMatrixThread extends Thread {
 class MaxValueThread extends Thread {
     static int[][] matrix;
 
-    MaxValueThread() {
+    MaxValueThread(Matrix matrixObj) {
         matrix = Matrix.matrix;
     }
 
@@ -79,7 +79,7 @@ class MaxValueThread extends Thread {
 class PrincipalDiagonalThread extends Thread {
     static int[][] matrix;
 
-    PrincipalDiagonalThread() {
+    PrincipalDiagonalThread(Matrix matrixObj) {
         matrix = Matrix.matrix;
     }
 
@@ -97,7 +97,7 @@ class PrincipalDiagonalThread extends Thread {
 
 class NonDiagonalThread extends Thread {
     static int[][] matrix;
-    NonDiagonalThread() {
+    NonDiagonalThread(Matrix matrixObj) {
         matrix = Matrix.matrix;
     }
 
@@ -123,12 +123,13 @@ public class ThreadMatrix {
         System.out.println("Enter the no. of rows and columns");
         int rows = sc.nextInt();
         int columns = sc.nextInt();
+        Matrix matrixObj = new Matrix(rows, columns);
 
-        DisplayMatrixThread t1 = new DisplayMatrixThread();
-        TransposeMatrixThread t2 = new TransposeMatrixThread();
-        MaxValueThread t3 = new MaxValueThread();
-        PrincipalDiagonalThread t4 = new PrincipalDiagonalThread();
-        NonDiagonalThread t5 = new NonDiagonalThread();
+        DisplayMatrixThread t1 = new DisplayMatrixThread(matrixObj);
+        TransposeMatrixThread t2 = new TransposeMatrixThread(matrixObj);
+        MaxValueThread t3 = new MaxValueThread(matrixObj);
+        PrincipalDiagonalThread t4 = new PrincipalDiagonalThread(matrixObj);
+        NonDiagonalThread t5 = new NonDiagonalThread(matrixObj);
 
         try {
             t1.start();
